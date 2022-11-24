@@ -17,6 +17,11 @@ public class _01_RegularExpressionsIntro {
      * Code method below! 
      */
     String emailRemover(String message) {
-        return null;
+    	String regEx = "";
+    	String outpt = "";
+    	
+    	regEx = "[@].+[.]";
+    	outpt = message.replaceAll(regEx, "@mail.");
+        return outpt;
     }
 }
